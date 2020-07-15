@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Start Main Rules */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+.App,
+#root,
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* End Main Rules */
+
+/* ========================== Start Auth Style ========================== */
+
+/* Start OverRide BootStrap */
+
+.btn-primary {
+  background-color: #fbc687 !important;
+  border: none !important;
+  transition: all 0.5s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #ea907a !important;
+}
+span.list-group-item:first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+span.list-group-item:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+.list-group-item:hover,
+span.list-group-item:focus {
+  background-color: #fbc687 !important;
+}
+.auth-wrapper .form-control:focus {
+  border-color: #fbc687 !important;
+}
+.list-group-item {
+  transition: all 0.5s ease-in-out;
+}
+.list-group-item-action {
+  cursor: pointer;
+}
+.scrollspy-example {
+  margin-bottom: 20px;
+  display: none;
+}
+
+/* End OverRide BootStrap */
+
+.auth-wrapper {
+  text-align: left;
+  background: url('./img/bg.jpg') no-repeat center center !important;
+  background-size: cover !important;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  backdrop-filter: blur(2px) !important;
+}
+
+.auth-inner {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  transition: all 0.3s;
+}
+
+.auth-inner::after {
+  content: 'Copyright © EduMe 2020';
+  position: absolute;
+  bottom: 20px;
+  left: 125px;
+  color: #9c9c9c;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #ccc0c0;
+}
+
+/* ========================== End Auth Style ========================== */
